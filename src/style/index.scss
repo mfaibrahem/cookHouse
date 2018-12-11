@@ -9,14 +9,14 @@ html {
 }
 
 *,
-*::before,
+*::before, 
 *::after {
   box-sizing: inherit;
 }
 
 body {
   // background-image: 
-  //   url("/assets/images/Subtle-Prism.svg"),
+  //   url("../../dist/assets/images/Subtle-Prism.svg"),
   //   linear-gradient(to right, #4AC29A, #BDFFF3);
   background-size: cover;
   background-position: center center;

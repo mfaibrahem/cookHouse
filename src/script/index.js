@@ -1,6 +1,4 @@
 import '../style/index.scss';
-import 'ace-builds';
-import 'ace-builds/webpack-resolver';
 
 const menuIcon = document.querySelector('.menu--lines');
 const navItems = document.querySelector('.nav--items');
@@ -51,13 +49,3 @@ if (document.querySelector('.hero')) {
   
   carousel();
 }
-
-
-
-// ace.edit("editor", {
-// 	mode: "ace/mode/scss",
-// 	theme: "ace/theme/github",
-// 	maxLines: 50,
-// 	minLines: 10,
-// 	fontSize: 18
-// });
