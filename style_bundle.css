@@ -427,7 +427,7 @@ body {
       .wrapper .about--section .first p, .wrapper .about--section .second p {
         font-size: 1.1rem; }
   .wrapper .locations--section {
-    background-image: url("/assets/images/about-background.jpg");
+    background-image: url("/assets/images/location-background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
