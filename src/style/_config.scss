@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url("/assets/fonts/GothamRounded-Light.otf") format("OpenType");
+}
+@font-face {
+  font-family: "gotham-rounded-medium";
+  src: url("/assets/fonts/GothamRounded-Medium.otf") format("OpenType");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #272727;
+  &:visited {
+    color: unset;
+  }
+}
+
+$primary-color: #272727;
+$secondary-color: #ffc600;
+
+
+@mixin mediaSm {
+  @media only screen and (min-width: 520px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+
+@mixin heartAnimation($t) {
+  animation: a $t linear infinite;
+  @keyframes a {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1);
+    }
+    45% {
+      transform: scale(1.1);
+    }
+    60% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+
+.locations--section {
+  background-image: url('/assets/images/about-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  direction: rtl;
+  h1 {
+    direction: ltr;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.712);
+    img {
+      width: 3rem;
+    }
+  }
+  .div--cities {
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 2rem 3rem;
+    display: grid;
+    align-items: center;
+    grid-gap: 20px;
+    @include mediaMd {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mediaLg {
+      padding: 3rem 5rem;
+    }
+    .city {
+      padding: 2rem;
+      line-height: 1.5;
+      h2 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

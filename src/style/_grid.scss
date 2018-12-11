@@ -1,0 +1,19 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 100px;
+
+  @import 'header';
+
+  @import 'reservation';
+
+  @import 'menu';
+
+  @import 'about';
+
+  @import 'locations';
+
+  @import 'footer';
+
+}

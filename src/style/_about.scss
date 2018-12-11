@@ -1,0 +1,44 @@
+
+.about--section {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  align-content: space-around;
+  justify-items: center;
+  padding: 2rem;
+  line-height: 2;
+  word-spacing: 2px;
+  letter-spacing: .5px;
+  @include mediaMd {
+    padding: 4rem;
+  }
+  @include mediaLg {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .first, .second {
+    background-color: rgba(245, 241, 179, 0.719);
+    padding: 1.5rem;
+    // border: 1px solid transparent;
+    box-shadow: 0 2px 8px 0 rgb(252, 246, 172);
+    border-radius: 6px;
+
+    h1 {
+      font-size: 2rem;
+      border-bottom: 4px solid #FFF;
+      margin-right: -1.5rem;
+      margin-left: -1.5rem;
+      padding: 0 1.5rem;
+      text-transform: uppercase;
+
+      @include mediaMd {
+        font-size: 3rme;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
