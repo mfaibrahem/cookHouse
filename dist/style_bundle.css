@@ -1,10 +1,10 @@
 @font-face {
   font-family: "gotham-rounded-light";
-  src: url(GothamRounded-Light.otf) format("OpenType"); }
+  src: url(img/GothamRounded-Light.otf) format("OpenType"); }
 
 @font-face {
   font-family: "gotham-rounded-medium";
-  src: url(GothamRounded-Medium.otf) format("OpenType"); }
+  src: url(img/GothamRounded-Medium.otf) format("OpenType"); }
 
 h1,
 h2,
@@ -211,15 +211,15 @@ body {
           transition: all ease-out .5s;
           width: 100%; }
           .wrapper header .main .heros .hero.hero--1 {
-            background-image: url(hero-1.jpg); }
+            background-image: url(img/hero-1.jpg); }
           .wrapper header .main .heros .hero.hero--2 {
-            background-image: url(hero-2.jpg); }
+            background-image: url(img/hero-2.jpg); }
           .wrapper header .main .heros .hero.hero--3 {
-            background-image: url(hero-3.jpg); }
+            background-image: url(img/hero-3.jpg); }
           .wrapper header .main .heros .hero.hero--4 {
-            background-image: url(hero-4.jpg); }
+            background-image: url(img/hero-4.jpg); }
           .wrapper header .main .heros .hero.hero--5 {
-            background-image: url(hero-5.jpg); }
+            background-image: url(img/hero-5.jpg); }
       .wrapper header .main .main--caption {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -319,7 +319,7 @@ body {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        background: url(arrow-down.svg);
+        background: url(img/arrow-down.svg);
         background-position: 92%;
         background-size: 1rem;
         background-repeat: no-repeat;
@@ -356,7 +356,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     padding: 4rem;
-    background-image: url(menu-background.jpg);
+    background-image: url(img/menu-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -427,7 +427,7 @@ body {
       .wrapper .about--section .first p, .wrapper .about--section .second p {
         font-size: 1.1rem; }
   .wrapper .locations--section {
-    background-image: url(location-background.jpg);
+    background-image: url(img/location-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

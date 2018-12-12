@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -7,7 +8,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style_bundle.css'
     }
-    )
+    ),
+    new HtmlWebpackPlugin({
+      template: './src/html/index.html',
+      filename: 'main.html'
+    })
   ],
 
   entry: './src/script/index.js',
@@ -20,12 +25,23 @@ module.exports = {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' },
       { test: /\.s?css$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] },
-      {  test: /\.(png|jp(e*)g|svg|otf)$/, use: [ { loader: 'file-loader', options: { name: '[name].[ext]' } } ] }
+      { test: /\.html$/, use: ['html-loader'] },
+      {  
+          test: /\.(png|jp(e*)g|svg|otf)$/, 
+          use: [ 
+                { loader: 'file-loader', 
+                  options: { 
+                    name: '[name].[ext]',
+                    outputPath: 'img/'                  } 
+                } 
+          ] 
+      }
     ]
   },
   devServer: { 
     contentBase: path.resolve(__dirname,'dist'), 
     port: 7777,
-    open: 'Chrome'
+    open: 'Chrome',
+    index: 'main.html'
   }
 };
